@@ -13,22 +13,26 @@ const App = () => {
   return (
     <div className="app-container">
       <Navbar />
-      <p>
-        Hi, my name is
-        {' '}
-        <br />
-        Madeline King.
-        <br />
-        I love the art of design and
-        <br />
-        building things for the web.
-      </p>
-      <p>
-        I am a Software Engineer who specializes in
-        <br />
-        Front End Development.
-      </p>
-      <button type="button" onClick={(e) => { handleClick(e); }}>Check Out My Resume</button>
+      <div className="intro-container">
+        <p>
+          Hi, my name is
+          {' '}
+          <br />
+          <span className="intro-name">
+            Madeline King.
+          </span>
+          <br />
+          I love the art of design and
+          <br />
+          building things for the web.
+        </p>
+        <p>
+          I am a Software Engineer who specializes in
+          <br />
+          Front End Development.
+        </p>
+        <button type="button" onClick={(e) => { handleClick(e); }}>Check Out My Resume</button>
+      </div>
     </div>
   );
 };

@@ -19,12 +19,66 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+html, body {
+  /* background-color: rgb(16, 16, 16); */
+  font-family: 'Times New Roman';
+  font-weight: 300;
+  font-size: 20px;
+	height: 100%;
+	width: 100%;
+  /* color: #fff; */
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	 box-sizing: border-box;
+}
+
+#root {
+	height: 100%;
+	border: 5px dotted red
+}
+
 /* --app */
 .app-container {
+	display: flex;
+	height: 100%;
   border: 3px solid red
 }
 
 /* --navbar */
 .navbar-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1em;
+	width: fit-content;
+	height: 100%;
   border: 2px solid blue
+}
+
+#navbar-refs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  border: 3px dotted green
+}
+
+#navbar-social-links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px dotted green
+}
+
+/* --main */
+.intro-container {
+	border: 2px solid blue
+}
+
+.intro-name {
+	font-size: 3em;
+	border: 2px dotted purple
 }
